@@ -1,0 +1,28 @@
+<h3 class="page-header">Servers</h3>
+
+<div ui-view></div>
+
+<div class="row col-md-12">
+    <table class="table table-striped table-hover table-bordered">
+        <thead>
+        <tr>
+            <th>Hostname</th>
+            <th>Description</th>
+            <th>Vendor Name</th>
+            <th>Vendor Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="server in servers">
+            <td><a ui-sref="servers.dashboard({ id: server.id })">{{ server.hostname }}</a></td>
+            <td>{{ server.description }}</td>
+            <td>{{ server.serverSummary.vendorName }}</td>
+            <td>{{ server.serverSummary.vendorDescription }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="row col-md-10">
+    <!-- a ui-sref="servers.add" class="btn btn-default">New Server</a-->
+</div>

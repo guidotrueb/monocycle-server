@@ -1,0 +1,29 @@
+<h3 class="page-header">New Server</h3>
+
+<div>
+    <form name="addServerForm">
+        <div class="row">
+            <div class="form-group col-md-4" ng-class="{error: addServerForm.host.$invalid}">
+                <label for="host">Hostname</label>
+                <input type="text" ng-model="server.host" class="form-control" name="host" placeholder="server.hostname.net" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4" ng-class="{error: addServerForm.port.$invalid}">
+                <label for="port">Port</label>
+                <input type="text" ng-model="server.port" class="form-control" name="port" placeholder="8880" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4" ng-class="{error: addServerForm.description.$invalid}">
+                <label for="description">Description</label>
+                <input type="input" ng-model="server.description" class="form-control" name="description" placeholder="Application Server" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4">
+                <button type="submit" ng-click="save()" ng-disabled="addServerForm.$invalid" class="btn btn-primary">Add Server</button>
+            </div>
+        </div>
+    </form>
+</div>

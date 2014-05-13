@@ -1,0 +1,29 @@
+<h3 class="page-header">Dashboard</h3>
+
+<section id="chart">
+
+    <div class="row col-md-12">
+        <table class="table table-striped table-hover table-bordered">
+            <tbody>
+            <tr>
+                <td>{{ server.hostname }}</a></td>
+                <td>{{ server.serverSummary.vendorName }}</td>
+                <td>{{ server.serverSummary.vendorDescription }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h4>CPU Usage</h4>
+            <flot id="cpu" dataset="chartData" options="chartOptions" width="500px" height="200px"></flot>
+        </div>
+        <div class="col-md-6">
+            <h4>Memory Usage</h4>
+            <flot id="memory" dataset="chartData2" options="chartOptions2" width="500px" height="200px"></flot>
+
+        </div>
+    </div>
+
+</section>

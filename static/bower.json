@@ -1,0 +1,19 @@
+{
+  "name": "monocycle-client",
+  "description": "A client for Monocycle", 
+  "repository": "https://github.com/brcosta/monocycle",
+  "dependencies": {
+      "angular": "latest",
+      "jquery": "latest",
+      "restangular": "latest",
+      "angular-ui-router": "latest",
+      "ngAnimate": "latest",
+      "jqplot": "latest",
+      "angular-flot": "latest",
+      "bootstrap": "latest",
+      "flot": "latest",
+      "flot.tooltip": "latest",
+      "requirejs": "latest",
+      "requirejs-domready": "latest"
+  }
+}
